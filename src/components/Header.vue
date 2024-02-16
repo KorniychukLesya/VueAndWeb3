@@ -1,12 +1,9 @@
 <script setup>
-import { ref, watch } from 'vue'
-
 
 defineProps({
   walletConnect: Function,
   loader: Boolean
 })
-
 
 </script>
 
@@ -16,7 +13,6 @@ defineProps({
       <a class="navbar-brand">MyTransactions</a>
       <div class="d-flex">
         <button class="btn btn-primary btn-lg wallet-connect-button" @click="walletConnect">
-
           <div v-if="loader" class="d-flex justify-content-center">
             <div class="spinner-border spinner-border-sm" role="status">
               <span class="visually-hidden">Loading...</span>

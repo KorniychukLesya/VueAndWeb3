@@ -78,7 +78,6 @@ const switchToSepolia = async () => {
       method: 'wallet_addEthereumChain',
       params: [chainData],
     });
-    console.log('Network successfully switched to Sepolia');
     showToast('Network successfully switched to Sepolia');
   } catch (error) {
     console.error('Error when switching network to Sepolia:', error);
@@ -121,18 +120,29 @@ const getTransactions = async () => {
 </script>
 
 <template>
-  <Header :walletConnect="walletConnect" :loader="loader" />
+  <Header 
+    :walletConnect="walletConnect" 
+    :loader="loader" 
+  />
   <div v-if="account" class="container-xxl">
     <figure class="text-end border-bottom border-primary mb-3 mt-4">
       <blockquote class="blockquote">
-        <p class="table-responsive">Address: {{ account }}</p>
+        <p class="table-responsive">
+          Address: {{ account }}
+        </p>
       </blockquote>
       <figcaption class="blockquote fw-bold">
         Balance: {{ balance }} ETH
       </figcaption>
     </figure>
-    <SendTransaction :web3="web3" :account="account" />
-    <GetTransactions :web3="web3" :transactions="transactions" />
+    <SendTransaction 
+      :web3="web3" 
+      :account="account" 
+    />
+    <GetTransactions 
+      :web3="web3" 
+      :transactions="transactions" 
+    />
   </div>
   <div v-else class="container-xxl">
     <Hero />

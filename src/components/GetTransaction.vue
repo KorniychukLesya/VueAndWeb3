@@ -1,8 +1,4 @@
 <script setup>
-import { ref } from 'vue';
-
-const recipient = ref('');
-const amount = ref(null);
 
 defineProps({
   web3: Object,

@@ -1,5 +1,5 @@
 import { configure, defineRule } from 'vee-validate'
-import { numeric, regex, digits } from '@vee-validate/rules'
+import { numeric } from '@vee-validate/rules'
 
 configure({
   validateOnBlur: true,
@@ -9,7 +9,6 @@ configure({
 })
 
 const ETHEREUM_ADDRESS_REGEX = /^(0x)?[0-9a-fA-F]{40}$/
-
 
 defineRule('addreess', value =>
 ETHEREUM_ADDRESS_REGEX.test(value) ? true : `Enter the correct address`

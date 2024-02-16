@@ -47,22 +47,46 @@ const sendTransaction = async () => {
     <div class="card-header">
       Submit transaction
     </div>
-    <VForm class="d-flex flex-column p-2 justify-content-center" @submit="sendTransaction">
+    <VForm 
+      class="d-flex flex-column p-2 justify-content-center" 
+      @submit="sendTransaction"
+    >
       <div class="mb-3">
         <label for="address" class="form-label">Address of the recipient</label>
-        <Field rules="required|addreess" v-slot="{ errors, field }" name="address" v-model="recipient">
-          <input v-bind="field" :class="{ invalidInput: errors[0] }" class="form-control" id="address" type="text" />
+        <Field 
+          rules="required|addreess" 
+          v-slot="{ errors, field }" 
+          name="address" 
+          v-model="recipient"
+          >
+          <input 
+            v-bind="field" 
+            :class="{ invalidInput: errors[0] }" 
+            class="form-control" 
+            id="address" 
+            type="text" 
+          />
           <span class="validation-error-msg">{{ errors[0] }}</span>
         </Field>
       </div>
       <div class="mb-3">
         <label for="amount" class="form-label">Аmount</label>
-        <Field rules="required|numeric" v-slot="{ errors, field }" name="amount" v-model="amount">
-          <input v-bind="field" :class="{ invalidInput: errors[0] }" class="form-control" id="amount" type="number" />
+        <Field 
+          rules="required|numeric" 
+          v-slot="{ errors, field }" 
+          name="amount" 
+          v-model="amount"
+        >
+          <input 
+            v-bind="field" 
+            :class="{ invalidInput: errors[0] }" 
+            class="form-control" 
+            id="amount" 
+            type="number" 
+          />
           <span class="validation-error-msg">{{ errors[0] }}</span>
         </Field>
       </div>
-
       <button class="btn btn-primary mb-3" type="submit">Submit</button>
     </VForm>
   </div>
