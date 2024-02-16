@@ -6,7 +6,7 @@ The VueAndWeb3 Transactions Project is a web application designed to facilitate 
 ## This website is for testing purposes only. It utilizes the Sepolia test network. 
 You can obtain currency for this network at this [DEMO LINK](https://sepolia-faucet.pk910.de/#/) or any similar available resource.
 
-Here is [DEMO LINK]()
+Here is [DEMO LINK](vite-plugin-node-polyfills)
 
 ##  Technologies Used
 Vue.js
