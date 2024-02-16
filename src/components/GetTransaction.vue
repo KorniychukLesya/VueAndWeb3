@@ -13,6 +13,7 @@ const formatDate = (timestamp) => {
 </script>
 <template>
   <div class="table-responsive">
+    <h2 class="text-uppercase mt-3 mb-3">my transactions</h2>
     <table class="table table-striped table-bordered">
       <thead>
         <tr>

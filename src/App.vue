@@ -57,7 +57,6 @@ const walletConnect = async () => {
   }
 };
 
-
 const switchToSepolia = async () => {
   const API_KEY = import.meta.env.VITE_INFURA_KEY
   const hexIdSepolia = '0x' + idSepolia.toString(16);
