@@ -10,7 +10,7 @@ defineProps({
 <template>
   <nav class="navbar navbar-dark bg-dark ">
     <div class="container-xxl ">
-      <a class="navbar-brand">MyTransactions</a>
+      <a class="navbar-brand fw-bold text-primary">MyTransactions</a>
       <div class="d-flex">
         <button class="btn btn-primary btn-lg wallet-connect-button" @click="walletConnect">
           <div v-if="loader" class="d-flex justify-content-center">
