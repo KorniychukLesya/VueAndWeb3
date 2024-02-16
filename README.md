@@ -4,9 +4,9 @@
 The VueAndWeb3 Transactions Project is a web application designed to facilitate secure and efficient transaction management. Users can send transactions directly from their browsers and track their transaction history with ease.
 
 ## This website is for testing purposes only. It utilizes the Sepolia test network. 
-You can obtain currency for this network at this [DEMO LINK](https://sepolia-faucet.pk910.de/#/) or any similar available resource.
+You can obtain currency for this network at this [LINK](https://sepolia-faucet.pk910.de/#/) or any similar available resource.
 
-Here is [DEMO LINK](vite-plugin-node-polyfills)
+Here is [DEMO LINK](https://vueandweb3.web.app/)
 
 ##  Technologies Used
 Vue.js
