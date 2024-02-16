@@ -1,0 +1,27 @@
+{
+  "name": "vueandweb3",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@vee-validate/rules": "^4.12.5",
+    "axios": "^1.6.7",
+    "bootstrap": "^5.3.2",
+    "vee-validate": "^4.12.5",
+    "vue": "^3.4.15",
+    "vue-toast-notification": "^3.1.2",
+    "web3": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.3",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.21.1",
+    "vite": "^5.1.0"
+  }
+}
